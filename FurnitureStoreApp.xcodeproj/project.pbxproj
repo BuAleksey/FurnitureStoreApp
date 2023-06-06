@@ -14,6 +14,7 @@
 		87947AD52A2F197E008BF3FA /* ModelFurniture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87947AD42A2F197E008BF3FA /* ModelFurniture.swift */; };
 		87947AD72A2F22A2008BF3FA /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87947AD62A2F22A2008BF3FA /* CardView.swift */; };
 		87947AD92A2F4D96008BF3FA /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87947AD82A2F4D96008BF3FA /* DetailView.swift */; };
+		87CC83CC2A2FCE6E007B3C5B /* CustomShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87CC83CB2A2FCE6E007B3C5B /* CustomShape.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		87947AD42A2F197E008BF3FA /* ModelFurniture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelFurniture.swift; sourceTree = "<group>"; };
 		87947AD62A2F22A2008BF3FA /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		87947AD82A2F4D96008BF3FA /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		87CC83CB2A2FCE6E007B3C5B /* CustomShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomShape.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 				87947AC42A2F103F008BF3FA /* FurnitureStoreAppApp.swift */,
 				87947AD42A2F197E008BF3FA /* ModelFurniture.swift */,
 				87947ADA2A2F4D9A008BF3FA /* View */,
+				87CC83CB2A2FCE6E007B3C5B /* CustomShape.swift */,
 				87947AC82A2F1040008BF3FA /* Assets.xcassets */,
 				87947ACA2A2F1040008BF3FA /* Preview Content */,
 			);
@@ -156,6 +159,7 @@
 			files = (
 				87947AC52A2F103F008BF3FA /* FurnitureStoreAppApp.swift in Sources */,
 				87947AD52A2F197E008BF3FA /* ModelFurniture.swift in Sources */,
+				87CC83CC2A2FCE6E007B3C5B /* CustomShape.swift in Sources */,
 				87947AD72A2F22A2008BF3FA /* CardView.swift in Sources */,
 				87947AD92A2F4D96008BF3FA /* DetailView.swift in Sources */,
 				87947AD32A2F1098008BF3FA /* MainView.swift in Sources */,

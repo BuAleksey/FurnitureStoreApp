@@ -34,7 +34,7 @@ struct DetailView: View {
     @ViewBuilder
     private func detail() -> some View {
         ZStack {
-            RoundedRectangle(cornerRadius: 30)
+            CustomShape(corner: [.topLeft, .topRight], rad: 30)
                 .foregroundColor(.white)
             VStack {
                 HStack {
@@ -42,7 +42,7 @@ struct DetailView: View {
                         Text(item.title)
                             .font(.system(.title, design: .rounded))
                             .fontWeight(.bold)
-                        VStack {
+                        VStack(alignment: .leading) {
                             Text("Size: 75/50/60")
                             Text("Weight: 15kg")
                         }
@@ -63,10 +63,11 @@ struct DetailView: View {
                             .font(.subheadline)
                             .foregroundColor(.gray)
                     }
+                    .offset(y: -12)
                 }
                 .padding()
                 
-                HStack {
+                HStack(spacing: 30) {
                     Text(item.price)
                         .font(.system(.title2, design: .rounded))
                         .fontWeight(.bold)
@@ -79,13 +80,14 @@ struct DetailView: View {
                                     .stroke(.gray, lineWidth: 2)
                             }
                             .foregroundColor(.clear)
+                            .frame(width: 100,height: 40)
                         
-                        HStack {
+                        HStack(spacing: 15) {
                             Button {
                                 count -= 1
                             } label: {
                                 Text("-")
-                                    .foregroundColor(.black)
+                                    .foregroundColor(.gray)
                             }
                             
                             Text(String(count))
@@ -94,9 +96,10 @@ struct DetailView: View {
                                 count += 1
                             } label: {
                                 Text("+")
-                                    .foregroundColor(.black)
+                                    .foregroundColor(.gray)
                             }
                         }
+                        .frame(width: 100)
                         .font(.title3)
                         .foregroundColor(.gray)
                     }

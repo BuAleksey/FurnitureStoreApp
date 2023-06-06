@@ -12,12 +12,17 @@ struct MainView: View {
     
     var body: some View {
         NavigationView {
-            ScrollView {
+            ScrollView(showsIndicators: false) {
                 header()
                 
-                Text("Chairs")
-                    .font(.system(.title, design: .rounded))
-                    .fontWeight(.bold)
+                HStack {
+                    Text("Chairs")
+                        .font(.system(.title, design: .rounded))
+                        .fontWeight(.bold)
+                        .padding(.leading)
+                    
+                    Spacer()
+                }
                 
                 ScrollView(.horizontal, showsIndicators: false) {
                     HStack {
@@ -32,9 +37,14 @@ struct MainView: View {
                     .padding(.leading)
                 }
                 
-                Text("Armchairs")
-                    .font(.system(.title, design: .rounded))
-                    .fontWeight(.bold)
+                HStack {
+                    Text("Armchairs")
+                        .font(.system(.title, design: .rounded))
+                        .fontWeight(.bold)
+                        .padding(.leading)
+                    
+                    Spacer()
+                }
                 
                 ScrollView(.horizontal, showsIndicators: false) {
                     HStack {
@@ -49,9 +59,14 @@ struct MainView: View {
                     .padding(.leading)
                 }
                 
-                Text("Office chairs")
-                    .font(.system(.title, design: .rounded))
-                    .fontWeight(.bold)
+                HStack {
+                    Text("Office chairs")
+                        .font(.system(.title, design: .rounded))
+                        .fontWeight(.bold)
+                        .padding(.leading)
+                    
+                    Spacer()
+                }
                 
                 ScrollView(.horizontal, showsIndicators: false) {
                     HStack {
